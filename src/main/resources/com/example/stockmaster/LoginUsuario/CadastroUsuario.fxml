@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockmaster.Controles.LoginUsuario.CadastroUsuarioController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="48.4" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="31.2" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="108.4" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.4" minWidth="10.0" prefWidth="244.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.4" minWidth="10.0" prefWidth="101.6" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="67.8" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="76.4" minHeight="10.0" prefHeight="76.4" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="47.4" minHeight="10.0" prefHeight="28.4" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="38.4" minHeight="10.0" prefHeight="38.4" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="47.6" minHeight="10.0" prefHeight="47.6" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="60.6" minHeight="10.0" prefHeight="46.8" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.4" minHeight="10.0" prefHeight="56.6" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="83.8" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="68.0" prefWidth="438.0" GridPane.columnIndex="2" GridPane.columnSpan="3">
+            <children>
+                <Label alignment="CENTER_RIGHT" layoutX="191.0" layoutY="30.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="72.0" text="StockMater" textAlignment="CENTER" />
+            </children>
+        </Pane>
+        <Button fx:id="registrarButton" mnemonicParsing="false" text="Cadastrar-se" onAction="#handleRegistrarButtonAction" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+        <Button fx:id="voltarButton" layoutX="388.0" layoutY="357.0" mnemonicParsing="false" text="Voltar" onAction="#handleVoltarButtonAction" GridPane.halignment="CENTER" />
+        <Label text="Usuário" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+        <Label text="E-MAIL" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+        <Label prefHeight="18.0" prefWidth="110.0" text="Confirmar Senha" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+        <Label text="Senha" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+        <TextField fx:id="nomeField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <TextField fx:id="emailField" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <PasswordField fx:id="senhaField" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <PasswordField fx:id="confirmarSenhaField" layoutX="250.0" layoutY="233.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <Label fx:id="statusLabel" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+    </children>
+</GridPane>

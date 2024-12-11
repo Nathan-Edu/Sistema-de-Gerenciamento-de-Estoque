@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="648.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockmaster.Controles.Principal.PagInicialController">
+    <children>
+        <!-- Barra superior -->
+        <HBox layoutX="0.0" layoutY="0.0" prefHeight="54.0" prefWidth="622.0" style="-fx-background-color: #2C3E50;">
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                <Label alignment="CENTER" prefHeight="47.0" prefWidth="304.0" style="-fx-text-fill: white; -fx-font-size: 20px;" text="StockMaster Sistema de Gestão" textAlignment="CENTER" />
+            <ComboBox accessibleRole="CHECK_BOX" opacity="0.8" prefWidth="150.0" promptText="Configurações" HBox.hgrow="SOMETIMES" />
+            </children>
+        </HBox>
+
+        <!-- TabPane com abas -->
+        <TabPane layoutY="54.0" prefHeight="594.0" prefWidth="622.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <!-- Aba Página Inicial -->
+                <Tab text="Página Inicial">
+                    <content>
+                        <AnchorPane prefHeight="566.0" prefWidth="612.0">
+                            <TilePane hgap="15.0" layoutX="20.0" layoutY="20.0" prefColumns="3" prefHeight="134.0" prefWidth="407.0" vgap="15.0">
+                                <children>
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Criar Material" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Modificar Material" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Exibir Material" wrapText="true" />
+                                </children>
+                            </TilePane>
+                            <TilePane hgap="15.0" layoutX="20.0" layoutY="154.0" prefColumns="3" prefHeight="134.0" prefWidth="407.0" vgap="15.0">
+                                <children>
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Criar Lote" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Modificar Lote" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Exibir Lote" wrapText="true" />
+                                </children>
+                            </TilePane>
+                            <TilePane hgap="15.0" layoutX="20.0" layoutY="288.0" prefColumns="3" prefHeight="134.0" prefWidth="407.0" vgap="15.0">
+                                <children>
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Criar Requisições" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Modificar Requisições" textAlignment="CENTER" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Exibir Requisições" wrapText="true" />
+                                </children>
+                            </TilePane>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <!-- Aba Materiais -->
+                <Tab text="Materiais">
+                    <content>
+                        <AnchorPane>
+                            <TilePane hgap="20.0" layoutX="20.0" layoutY="20.0" prefColumns="2" prefHeight="300.0" prefWidth="542.0" vgap="20.0">
+                                <children>
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Criar Material" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Modificar Material" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Exibir Material" wrapText="true" />
+                                </children>
+                            </TilePane>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <!-- Aba Estoque -->
+                <Tab text="Estoque">
+                    <content>
+                        <AnchorPane>
+                            <Label layoutX="20.0" layoutY="20.0" style="-fx-font-size: 16px;" text="Informações sobre o Estoque" />
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <!-- Aba Requisições -->
+                <Tab text="Requisições">
+                    <content>
+                        <AnchorPane>
+                            <TilePane hgap="20.0" layoutX="20.0" layoutY="20.0" prefColumns="3" prefHeight="300.0" prefWidth="560.0" vgap="20.0">
+                                <children>
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Criar Requisição" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Modificar Requisição" wrapText="true" />
+                                    <Button prefHeight="120.0" prefWidth="120.0" text="Exibir as Requisições" wrapText="true" />
+                                </children>
+                            </TilePane>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
